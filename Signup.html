@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UFT-8">
+    <title>Form Login</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <header>
+            <h2><a href="#" class="logo">BOOKSTORE</a></h2>
+            <div class="Nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="book.html">Book</a></li>
+                    <li><a href="Quote.html">Quote</a></li>
+                    <li><a href="https://toilacoder1701.github.io/LAB2_4/index.html">SGU Library</a></li>
+                    <li><a href="#">Đăng ký<i class="fas fa-sign-in-alt"></i></a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+            <div class="title">Registration</div>
+            <form action="index.html">
+                <div class="detail">
+                <div class="input-box">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname"placeholder="Enter your FullName" required>
+                </div>
+                <div class="input-box">
+                    <label for="age">Age</label>
+                    <input type="text" id="Age" placeholder="Enter your a Age" required>
+                </div>
+                <div class="input-box">
+                    <label for="Fav">Favorite</label>
+                    <input type="" id="Fav" list="fav" multiple required>
+                    <datalist id="fav">
+                        <option value="Web Developer"></option>
+                        <option value="Front End"></option>
+                        <option value="Back-End"></option>
+                        <option value="Web Developer"></option>
+                        <option value="Web Developer"></option>
+                    </datalist>
+                </div>
+                <div class="input-box">
+                    <label for="job">Job</label>
+                    <input type="text" id="job" placeholder="Enter your Job">
+                </div>
+                </div>
+                <div id="btn">
+                    <input type="submit" value="Register" onclick="myFunction">
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+        function myFunction(){
+            alert("Chúc mừng bạn đã đăng kí nhận sách Bí Ẩn thành công!");
+        }
+    </script>
+</body>
+</html>
